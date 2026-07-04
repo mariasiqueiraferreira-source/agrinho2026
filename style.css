@@ -16,4 +16,11 @@ button {
     font-size: medium;
 }
 
+.passo{display: none;
+
+}
+
+.passo.ativo {
+    display:block;
+}
 
