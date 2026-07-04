@@ -25,3 +25,8 @@ button {
     display:block;
 }
 
+main {
+    max-width: 90%;
+    text-align: center;
+    
+}
