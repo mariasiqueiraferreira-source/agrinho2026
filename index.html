@@ -1,51 +1,299 @@
+```html
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
-    <title>Agricultura Regenerativa</title>
+    <title>AgroForte - Agricultura Regenerativa</title>
+
+    <!-- Arquivo CSS -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
+    <!-- Cabeçalho do site -->
+    <header>
+
+        <h1>AgroForte: Agricultura Regenerativa e Sustentabilidade</h1>
+
+        <p>
+            Um espaço criado para apresentar informações sobre práticas agrícolas
+            que ajudam a conservar o solo, proteger a água e incentivar uma produção
+            sustentável para as próximas gerações.
+        </p>
+
+        <!-- Botão que será utilizado pelo JavaScript -->
+        <button id="modoEscuro">
+            🌙 Modo Escuro
+        </button>
+
+    </header>
+
+    <hr>
+
     <main>
-        <div class="passo ativo" id="passo-0">
-            <img src="cenario-passo0.png" alt="">
+
+        <!-- Primeira seção -->
+        <section>
+
+            <h2>O que é Agricultura Regenerativa?</h2>
+
             <p>
-                Durante uma aula sobre sustentabilidade, você recebe a missão de conhecer
-                práticas de agricultura regenerativa que ajudam a recuperar o solo,
-                preservar a água e aumentar a biodiversidade. Para começar essa jornada,
-                escolha uma propriedade para visitar.
+                A <strong>agricultura regenerativa</strong> reúne práticas que procuram
+                recuperar a qualidade do solo, preservar a biodiversidade e reduzir os
+                impactos ambientais causados pela produção agrícola.
             </p>
 
-            <button class="btn-proximo" data-proximo="1">Visitar uma fazenda regenerativa</button>
-            <button class="btn-proximo" data-proximo="2">Visitar uma horta comunitária</button>
-        </div>
-
-        <div class="passo" id="passo-1">
-            <h1>Começo de uma história</h1>
             <p>
-                Na fazenda, você observa que o solo está coberto por plantas e restos
-                vegetais, protegendo-o da erosão e mantendo sua umidade. O agricultor
-                explica que essa técnica melhora a fertilidade do solo de forma natural.
+                Ela incentiva o uso consciente dos recursos naturais e busca produzir
+                alimentos de forma equilibrada, respeitando o meio ambiente.
             </p>
 
-            <button class="btn-proximo" data-proximo="3">
-                Aprender sobre cobertura do solo
+            <blockquote>
+                <q>
+                    Cuidar do solo hoje é garantir alimentos para o futuro.
+                </q>
+            </blockquote>
+
+        </section>
+
+        <hr>
+
+        <!-- Segunda seção -->
+        <section>
+
+            <h2>Benefícios para o meio ambiente</h2>
+
+            <div class="cards">
+
+                <div class="card">
+
+                    <img src="img/solo.jpg"
+                    alt="Solo com vegetação saudável">
+
+                    <h3>Solo saudável</h3>
+
+                    <p>
+                        A recuperação do solo melhora sua fertilidade e reduz processos
+                        de erosão.
+                    </p>
+
+                </div>
+
+                <div class="card">
+
+                    <img src="img/plantacao.jpg"
+                    alt="Plantação sustentável">
+
+                    <h3>Produção sustentável</h3>
+
+                    <p>
+                        O uso responsável dos recursos naturais favorece uma produção
+                        agrícola mais eficiente.
+                    </p>
+
+                </div>
+
+                <div class="card">
+
+                    <img src="img/natureza.jpg"
+                    alt="Área verde preservada">
+
+                    <h3>Preservação ambiental</h3>
+
+                    <p>
+                        A proteção das matas e da biodiversidade ajuda no equilíbrio
+                        dos ecossistemas.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <hr>
+
+        <!-- Lista utilizando UL -->
+        <section>
+
+            <h2>Boas práticas agrícolas</h2>
+
+            <ul>
+
+                <li>Rotação de culturas.</li>
+
+                <li>Proteção das nascentes.</li>
+
+                <li>Uso racional da água.</li>
+
+                <li>Plantio de cobertura.</li>
+
+                <li>Redução do desperdício.</li>
+
+            </ul>
+
+        </section>
+
+        <hr>
+
+        <!-- Lista ordenada -->
+        <section>
+
+            <h2>Como começar?</h2>
+
+            <ol>
+
+                <li>Conhecer o solo da propriedade.</li>
+
+                <li>Planejar o cultivo.</li>
+
+                <li>Utilizar técnicas sustentáveis.</li>
+
+                <li>Acompanhar os resultados.</li>
+
+            </ol>
+
+        </section>
+
+        <hr>
+
+        <!-- Informações extras -->
+        <section>
+
+            <h2>Você sabia?</h2>
+
+            <p id="textoExtra">
+
+                O <abbr title="Sistema de Plantio Direto">
+                    SPD
+                </abbr>
+
+                ajuda a proteger o solo contra a erosão e melhora a retenção de água.
+
+            </p>
+
+            <!-- Botão utilizado pelo JavaScript -->
+            <button id="mostrar">
+                Mostrar/Ocultar Informação
             </button>
 
-            <button class="btn-proximo" data-proximo="4">
-                Conhecer outras práticas regenerativas
+        </section>
+
+        <hr>
+
+        <!-- Pequeno formulário -->
+        <section>
+
+            <h2>Receba uma saudação personalizada</h2>
+
+            <label for="nome">
+                Digite seu nome:
+            </label>
+
+            <br><br>
+
+            <input
+                type="text"
+                id="nome"
+                placeholder="Digite seu nome">
+
+            <button id="saudar">
+                Enviar
             </button>
-        </div>
+
+            <p id="mensagem"></p>
+
+        </section>
+
+        <hr>
+
+        <!-- Contador -->
+        <section>
+
+            <h2>Dica sustentável</h2>
+
+            <p id="contador">
+                Você visualizou 0 dicas.
+            </p>
+
+            <button id="contar">
+                Ver dica
+            </button>
+
+        </section>
+
+        <hr>
+
+        <!-- Código usando PRE e CODE -->
+        <section>
+
+            <h2>Exemplo de código HTML</h2>
+
+<pre>
+<code>
+&lt;h1&gt;Agricultura Sustentável&lt;/h1&gt;
+&lt;p&gt;Produzir respeitando a natureza.&lt;/p&gt;
+</code>
+</pre>
+
+        </section>
+
+        <hr>
+
+        <!-- Curiosidade -->
+        <section>
+
+            <h2>Curiosidade</h2>
+
+            <p>
+
+                Segundo o
+                <cite>Brasil Escola</cite>,
+                práticas sustentáveis ajudam na conservação dos recursos naturais
+                e incentivam uma produção mais responsável.
+
+            </p>
+
+        </section>
+
     </main>
-    <script src="script.js"></script>
+
+    <hr>
+
+    <!-- Rodapé -->
+    <footer>
+
+        <address>
+
+            Desenvolvido por
+            <strong>Maria Clara Siqueira Ferreira</strong>.
+
+        </address>
+
+        <p>
+
+            Saiba mais em:
+
+            <a href="https://brasilescola.uol.com.br/"
+               target="_blank">
+
+                Brasil Escola
+
+            </a>
+
+        </p>
+
+        <span>
+            Site educativo sobre agricultura regenerativa e sustentabilidade.
+        </span>
+
+    </footer>
+
+    <!-- Arquivo JavaScript -->
+    <script src="js/script.js"></script>
 
 </body>
-
 </html>
+```
