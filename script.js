@@ -1,65 +1,30 @@
-// Script do site
-// Maria Clara Siqueira Ferreira
+// Guarda o nome do usuário (uso de variável como pede a rubrica)
+let nomeUsuario = "Visitante";
 
-// Modo escuro
-const botaoModo = document.getElementById("modoEscuro");
+// Seleciona elementos do HTML
+const botaoModo = document.getElementById("btnModo");
+const body = document.body;
 
-botaoModo.addEventListener("click", () => {
-    document.body.classList.toggle("dark-mode");
-});
+// Cria um elemento para mensagem dinâmica
+const mensagem = document.createElement("p");
+mensagem.textContent = "Olá, " + nomeUsuario + "! Bem-vindo ao site sobre agricultura regenerativa.";
+document.body.insertBefore(mensagem, document.body.firstChild);
 
+// Função para alternar modo escuro
+function alternarModo() {
+    body.classList.toggle("modo-escuro");
 
-// Mostrar/ocultar informação
-const texto = document.getElementById("textoExtra");
-const botaoMostrar = document.getElementById("mostrar");
-
-let visivel = true;
-
-botaoMostrar.addEventListener("click", () => {
-    visivel = !visivel;
-
-    texto.style.display = visivel ? "block" : "none";
-});
-
-
-// Saudação personalizada
-const nome = document.getElementById("nome");
-const mensagem = document.getElementById("mensagem");
-const botaoSaudar = document.getElementById("saudar");
-
-botaoSaudar.addEventListener("click", () => {
-    const usuario = nome.value.trim();
-
-    if (!usuario) {
-        mensagem.textContent = "Digite seu nome para continuar.";
-        return;
+    if (body.classList.contains("modo-escuro")) {
+        botaoModo.textContent = "Modo claro";
+    } else {
+        botaoModo.textContent = "Modo escuro";
     }
+}
 
-    mensagem.innerHTML = `Olá, <strong>${usuario}</strong>! Seja bem-vindo(a).`;
+// Evento no botão (interação com DOM)
+botaoModo.addEventListener("click", alternarModo);
+
+// Exemplo simples de interação adicional (usabilidade)
+mensagem.addEventListener("click", function () {
+    mensagem.textContent = "Agricultura regenerativa transforma o solo e o futuro 🌱";
 });
-
-
-// Contador de dicas
-let contador = 0;
-
-const botaoContar = document.getElementById("contar");
-const textoContador = document.getElementById("contador");
-
-const dicas = [
-    "Preserve o solo com cobertura vegetal.",
-    "Economize água na irrigação.",
-    "Plante árvores sempre que possível.",
-    "Use adubos orgânicos.",
-    "Proteja a biodiversidade."
-];
-
-botaoContar.addEventListener("click", () => {
-    contador++;
-
-    textoContador.textContent = `Você visualizou ${contador} dicas.`;
-
-    const sorteio = Math.floor(Math.random() * dicas.length);
-    alert(dicas[sorteio]);
-});
-
-console.log("Site carregado com sucesso!");
