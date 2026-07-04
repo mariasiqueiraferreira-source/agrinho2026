@@ -2,7 +2,7 @@ body {
     background-color: #0a3009;
     color: white;
     font-family: "Playfair Display", sans-serif;
-    font-size: xx-large;
+    font-size: x-large;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -14,7 +14,7 @@ button {
     background-color: #99f896;
     color: black;
     font-family: "Playfair Display", sans-serif;
-    font-size: medium;
+    font-size: large;
 }
 
 .passo{display: none;
