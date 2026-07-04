@@ -150,4 +150,8 @@ address {
         display: inline-block;
         margin: 5px 0;
     }
+    .modo-escuro {
+    background: #102010;
+    color: #d7ffd9;
+    }
 }
