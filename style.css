@@ -1,32 +1,52 @@
 
+/* Variáveis de cores para o Modo Claro */
+   :root {
+    --bg-principal: rgb(204, 200, 241);
+    --texto-principal: #000000;
+    --bg-alt1: rgb lightpink;
+    --bg-alt2: lightblue;
+    --bg-alt3: lightgoldenrodyellow;
+    --bg-alt4: lightgreen;
+}
+
+/* Variáveis de cores para o Modo Escuro */ 
+body.dark {
+    --bg-principal: #1e1e1e;
+    --texto-principal: #ffffff;
+    --bg-alt1: #e91c4f; 
+    --bg-alt2: #0c31a0;
+    --bg-alt3: #dfcd08;
+    --bg-alt4: #056622;
+}
+
+/* Aplicação dos estilos usando as variáveis */
 body {
-    background-color: #04410a;
-    color: white;
-    font-family: "Bai Jamjuree", sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 700px;
-    margin: 0;
+    background-color: var(--bg-principal);
+    color: var(--texto-principal);
+    transition: background-color 0.3s, color 0.3s;
 }
 
-button {
-    background-color: #faf393;
-    color: #04410a;
-    font-family: "Bai Jamjuree", sans-serif;
+h1 {
+    text-align: center; 
+    font-size: 40px;
 }
 
-.passo {
-    display: none;
+.alternativa {
+    margin: 10px; 
+    padding: 10px;
+    transition: background-color 0.3s;
 }
 
-.passo.ativo {
-    display:block;
-}
-main {
-    text-align: center;
-    max-width: 90%;
-}
-img {
-    max-width: 90%;
+.alt-coral { background-color: var(--bg-alt1); }
+.alt-blue { background-color: var(--bg-alt2); }
+.alt-yellow { background-color: var(--bg-alt3); }
+.alt-green { background-color: var(--bg-alt4); }
+
+/* Estilo do botão de modo escuro */
+#btn-dark-mode {
+    margin-top: 15px;
+    padding: 8px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    display: block;
 }
