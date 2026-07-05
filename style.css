@@ -37,7 +37,7 @@ h1 {
     transition: background-color 0.3s;
 }
 
-.alt-coral { background-color: var(--bg-alt1); }
+.alt-pink { background-color: var(--bg-alt1); }
 .alt-blue { background-color: var(--bg-alt2); }
 .alt-yellow { background-color: var(--bg-alt3); }
 .alt-green { background-color: var(--bg-alt4); }
