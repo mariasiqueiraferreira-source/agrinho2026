@@ -50,3 +50,10 @@ h1 {
     cursor: pointer;
     display: block;
 }
+
+img {
+    width: 400px;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+}
