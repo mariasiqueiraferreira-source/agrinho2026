@@ -1,9 +1,9 @@
 
 /* Variáveis de cores para o Modo Claro */
    :root {
-    --bg-principal: rgb(253, 221, 172);
-    --texto-principal: black;
-    --bg-alt1: rgb lightcoral;
+    --bg-principal: beige;
+    --texto-principal: #000000;
+    --bg-alt1: lightcoral;
     --bg-alt2: lightblue;
     --bg-alt3: lightgoldenrodyellow;
     --bg-alt4: lightgreen;
@@ -13,10 +13,10 @@
 body.dark {
     --bg-principal: #1e1e1e;
     --texto-principal: #ffffff;
-    --bg-alt1: rgb(255, 0, 0); 
-    --bg-alt2: #0c31a0;
-    --bg-alt3: #dfcd08;
-    --bg-alt4: #056622;
+    --bg-alt1: #8b2626; 
+    --bg-alt2: #27408b;
+    --bg-alt3: #8b864e;
+    --bg-alt4: #2e8b57;
 }
 
 /* Aplicação dos estilos usando as variáveis */
