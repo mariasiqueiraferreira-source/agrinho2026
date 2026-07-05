@@ -1,9 +1,9 @@
 
 /* Variáveis de cores para o Modo Claro */
    :root {
-    --bg-principal: rgb(204, 200, 241);
-    --texto-principal: #000000;
-    --bg-alt1: rgb lightpink;
+    --bg-principal: rgb(197, 252, 252);
+    --texto-principal: black;
+    --bg-alt1: rgb lightcoral;
     --bg-alt2: lightblue;
     --bg-alt3: lightgoldenrodyellow;
     --bg-alt4: lightgreen;
@@ -13,7 +13,7 @@
 body.dark {
     --bg-principal: #1e1e1e;
     --texto-principal: #ffffff;
-    --bg-alt1: #e91c4f; 
+    --bg-alt1: rgb(255, 0, 0); 
     --bg-alt2: #0c31a0;
     --bg-alt3: #dfcd08;
     --bg-alt4: #056622;
@@ -37,7 +37,7 @@ h1 {
     transition: background-color 0.3s;
 }
 
-.alt-pink { background-color: var(--bg-alt1); }
+.alt-coral { background-color: var(--bg-alt1); }
 .alt-blue { background-color: var(--bg-alt2); }
 .alt-yellow { background-color: var(--bg-alt3); }
 .alt-green { background-color: var(--bg-alt4); }
